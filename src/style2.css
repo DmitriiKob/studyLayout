@@ -1,7 +1,7 @@
 
 body{
     margin: 0%;
-    font-family: Montserrat, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
     background-color: #FCE1E1;
 }
@@ -28,17 +28,20 @@ h2{
     line-height: 36px;
     margin-bottom: 43px;
 }
-.new_page form input{
+.new_page form div > input{
     padding: 8px 0 8px 14px;
     width: 237px;
     height: 40px;
-    left: 600px;
-    top: 508px;
     background: #FCE1E1;
     border: 1px solid #978F97;
     box-sizing: border-box;
     margin: 12px 0;
 }
+
+.new_page form div > input::placeholder{
+    font-family: "Montserrat", sans-serif;
+}
+
 .new_page .form-title{
     text-align: center;
 }
@@ -49,26 +52,39 @@ margin-right: 10px;
     width: 488px;
 }
 button{
-    margin-top: 42px;
-    height: 40px;
-    width: 177px;
     padding: 11px 34px;
-    background: #FCFFDC;
-    color: #000;
-    font-family: Montserrat;
-    font-weight: 200;
+    background: #6cc77a;
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
     border: 0;
     border-radius: 7px;
     font-size: 15px;
     line-height: 18px;
-   height: 40px;
+    height: 40px;
 }
 .rules{
     font-weight: 200;
-    font-family: Motserrat;
+    font-family: "Montserrat", sans-serif;
     background-color: #FCE1;
     background: #FCE1;
-    height: 1px;
-    margin: -12px auto 10px;
-    width: 70px;
+    height: 40px;
+}
+
+.rules label {
+    width: 50%;
+    margin-top: 6px;
+    color: #777;
+    display: inline-block;
+    font-family: "Montserrat";
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.rules label input{
+    margin: 0;
+    width: 13px;
+    border: 1px solid #978F97;
+    border-radius: 0;
+    height: 13px;
 }
