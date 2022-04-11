@@ -1,0 +1,125 @@
+h1, h3{
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    transition-duration: 0.5s;
+}
+
+h1:hover {
+    color:#888;
+}
+
+section {
+    padding: 120px 0;
+}
+
+.gallery {
+    margin: 80px auto;
+    width: fit-content;
+}
+
+.gallery div{
+    display: inline-block;
+    width: 173px;
+    height: 76px;
+    background-color: #18A0FB;
+    margin: 0 42px;
+}
+
+.gallery div > a{
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    transition-duration:1s;
+}
+
+.gallery div:nth-child(2) > a:visited {
+    color: orange;
+}
+
+.gallery div:nth-child(3n) > a:hover {
+    background-color: #6b3434;
+    color: rgba(0,0,0,0);
+}
+
+.gallery div:nth-child(3) > a:hover {
+    background-color: #6b3434;
+    color: rgba(0,0,0,0);
+}
+
+.gallery div:nth-child(3) > a:active {
+    background-color: #42ea7c;
+    color: rgba(0,0,0,0);
+}
+
+.gallery:before {
+    content: '<--';
+    font-size: 30px;
+    cursor: pointer;
+    transition-duration:1s;
+}
+
+.gallery::before:hover{
+    color: #6b3434;
+}
+
+.gallery:after {
+    content: '-->';
+}
+
+.burger {
+    position: fixed;
+    top:40px;
+    right:60px;
+
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger > div, .left-burger > div {
+    height: 4px;
+    width: 30px;
+    background-color: #333;
+    margin-top: 5px;
+    transition-duration: 400ms;
+}
+
+.burger > div:nth-child(2) {
+    width: 22px;
+    margin-left: 8px;
+}
+
+.burger > div:last-child {
+    width: 15px;
+    margin-left: 15px;
+}
+
+.burger:hover > div {
+    width: 30px ;
+    margin-left: 0 ;
+}
+
+
+.left-burger {
+    position: fixed;
+    top:40px;
+    left:60px;
+
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.left-burger:hover > div:nth-child(1){
+    transform: rotate(45deg) translate(3px, 10px);
+}
+
+.left-burger:hover > div:nth-child(2){
+    opacity: 0;
+}
+
+.left-burger:hover > div:nth-child(3){
+    transform: rotate(-45deg) translate(3px, -10px);
+}
