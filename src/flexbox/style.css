@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #dfdfdf;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    text-align: center;
+    align-items: center;
+    margin: 15px;
+    background: #fff;
+}
+
+.first h1 {
+    margin: 120px 0 15px 0;
+}
+
+.first h3 {
+    margin: 15px 0 80px 0;
+}
+
+.first div {
+    max-width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.first div img {
+   margin: 32px 42px;
+}
+
+
+.second {
+    background: #fff;
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.second > img {
+    width: 509px;
+    height: 470px;
+}
+
+@media (max-width: 1018px) {
+    .second > img {
+        width: 100%;
+        height: 470px;
+    }
+}
+
+.second > div {
+    min-width: 509px;
+    max-width: calc(100% - 509px);
+}
+
+.second h3 {
+    margin: 0 5%;
+}
+
+.second div > div{
+    margin: 40px 5%;
+    display: flex;
+    align-items: center;
+}
+
+.second span {
+    margin-left: 15px;
+}
+
+.third {
+    background-image: url("RectangleB.png");
+    height: 100vh;
+    margin: 15px;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.third img {
+    margin-top: 311px;
+}
+
+.third h1 {
+    text-align: center;
+}
+
+.third button{
+    background: #18A0FB;
+    border-radius: 6px;
+    border:0;
+    outline: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    padding: 15px 50px;
+    cursor: pointer;
+}
