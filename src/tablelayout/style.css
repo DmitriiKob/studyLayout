@@ -1,0 +1,106 @@
+body {
+    font-family: 'Mulish', sans-serif ;
+}
+
+h2 {
+    margin-bottom: 16px;
+}
+
+table {
+    width: 100%;
+    min-width: 900px;
+    overflow-x: scroll;
+}
+
+
+th, td {
+    /*border: 1px solid #444;*/
+    text-align: left;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+}
+
+th {
+    font-weight: 600;
+    line-height: 18px;
+}
+
+td {
+    line-height: 20px;
+    color: #737B7D;
+
+}
+
+.table-title > th {
+    font-weight: 400;
+    line-height: 20px;
+    color: #737B7D;
+}
+
+label {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    background-image: url("unchecked.png");
+    position: relative;
+    top:3px;
+}
+
+img {
+    position: relative;
+    top:3px;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input[type=checkbox]:checked + label {
+    background-image: url("checked.svg");
+}
+
+
+.large-column-1 {
+    width: 10.666vw;
+}
+
+.large-column-2 {
+    width: 19.666vw;
+}
+
+.small-column {
+    width: 25px;
+}
+
+.normal-column {
+    width: 112px;
+}
+
+.filter-after{
+    position: relative;
+}
+
+.filter-after:after {
+    content: " ";
+    background-image: url("filter.svg");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    left: 40px;
+}
+
+.sort-before {
+    position: relative;
+}
+
+.sort-before:before {
+    content: " ";
+    background-image: url("sort.png");
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: absolute;
+    left:-16px;
+}
