@@ -59,3 +59,19 @@ body>div{
     display: flex;
     flex-direction: column;
 }
+@media screen and (min-width:768px){
+    body>div{
+        flex-direction: row;
+    }
+    h1{
+        font-size: 32px;
+    }
+}
+@media screen and (min-width:1440px){
+    h1{
+        font-size: 64px;
+    }
+    button{
+        padding: 22.5px 60px;
+    }
+}
