@@ -5,11 +5,12 @@ body{
 body {   
     background-image: url(desktop.svg);      
     background-position: center center;      
-    background-repeat: no-repeat;      
-    background-attachment: fixed;      
+    background-repeat: no-repeat;
+    height: calc(100vh - 52px);          
     background-size: cover;      
     background-color: #000000;
     margin: 0;
+    /* overscroll-behavior: none; */
 
  }
  h1{
@@ -29,37 +30,46 @@ p{
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
-    color: #3C3C43;
     text-align: center;
+    margin-inline: 5%;
 }
 
 button{
     font-family: "Roboto Mono";
-    background: #6F1DF4;
-    border-radius: 8px;
+    background: #FFFFFF;
+    border-radius: 32px;
     padding: 22.5px 30px;
     margin: 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
-    color: #FFFFFF;
+    color: #000000;
     border: 0;
+
 }
 
 .play_btn{
+    color: #FFFFFF;
     font-family: "Roboto Mono";
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
     display: flex;
     align-items: center;
-    width: 95px;
+    width:fit-content;
     justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
 }
  .play_btn::before{
-     content: url("./Vector.svg");
+     content: url("./Vector.png");
      width: 28px;
      height: 28px;
+     margin-right: 15px;
+     color: #FFFFFF;
  }
 body>div{
     align-items: center;
@@ -69,6 +79,7 @@ body>div{
 @media screen and (min-width:768px){
     body>div{
         flex-direction: row;
+        justify-content: center;
     }
     h1{
         font-size: 32px;
@@ -77,6 +88,9 @@ body>div{
 @media screen and (min-width:1440px){
     h1{
         font-size: 64px;
+    }
+    p{
+        margin-inline: 15%;
     }
     button{
         padding: 22.5px 60px;
