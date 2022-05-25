@@ -44,3 +44,66 @@
 
   console.log(P)
 }
+
+{ //Begin2
+  const a = 10
+  const S = a * a
+
+  console.log(S)
+}
+
+{ //Begin3
+  const a = 10
+  const b = 8
+  const P = a * b
+
+  console.log(P)
+}
+
+{ //Begin4
+  const d = 10
+  const P = d * 3.14
+
+  console.log(P)
+}
+
+{ //Begin5
+  const a = 10
+  const V = a * a * a
+  const S = 6 * a
+
+  console.log(V,S)
+}
+
+{ //Begin6
+  const a = 10
+  const b = 8
+  const c = 19
+  const V = a * b * c
+  const S = 2 * (a * b + b * c + a * c)
+
+  console.log(V,S)
+}
+
+{ //Integer1
+  const a = 800
+  const L = 800 / 100
+
+  console.log(L)
+}
+
+{ //Integer4
+  const a = 800
+  const b = 100
+  const L = 800 / 100
+
+  console.log(L)
+}
+
+{ //Integer5
+  const a = 800
+  const b = 100
+  const L = 800 / 100
+
+  console.log(L)
+}
