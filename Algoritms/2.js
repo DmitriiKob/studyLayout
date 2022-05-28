@@ -41,7 +41,7 @@
 
 
 {
-  console.log(55 === 6 && true)
+  //console.log(55 === 6 && true)
 }
 
 
@@ -50,7 +50,7 @@
 
 { // Boolean1 Дано целое число A. Проверить истинность высказывания: «Число A является положительным»
   const A = Math.round(Math.random() * 10 - 5)
-  console.log(A, 0 <= A)
+  //console.log(A, 0 <= A)
 }
 
 
@@ -59,7 +59,7 @@
 {
   const A = Math.round(Math.random() * 10)
   const B = Math.round(Math.random() * 10)
-  console.log(A, B, A > 2, B <= 3)
+  //console.log(A, B, A > 2, B <= 3)
 }
 
 
@@ -71,7 +71,7 @@
   const A = Math.round(Math.random() * 10)
   const B = Math.round(Math.random() * 10)
   const C = Math.round(Math.random() * 10)
-  console.log(A, B, C, A < B < C)
+  //console.log(A, B, C, A < B < C)
 }
 
 //Boolean2
@@ -79,7 +79,7 @@
 {
   const A = Math.round(Math.random() * 10)
   const B = Math.round(Math.random() * 10)
-  console.log(A, B, A % 2 == 0, B % 2 == 0)
+  //console.log(A, B, A % 2 == 0, B % 2 == 0)
 }
 
 //Boolean9
@@ -87,7 +87,7 @@
 {
   const A = Math.round(Math.random() * 10)
   const B = Math.round(Math.random() * 10)
-  console.log(A, B, A % 1 == 0 && A % 2 != 0, B % 1 == 0 && B % 2 != 0)
+  //console.log(A, B, A % 1 == 0 && A % 2 != 0, B % 1 == 0 && B % 2 != 0)
 }
 
 //Boolean12
@@ -95,7 +95,7 @@
 {
   const A = Math.round(Math.random() * 10 - 5)
   const B = Math.round(Math.random() * 10 - 5)
-  console.log(A, B, A >= 0, B >= 0)
+  //console.log(A, B, A >= 0, B >= 0)
 }
 
 //Boolean10
@@ -103,7 +103,7 @@
 {
   const A = Math.round(Math.random() * 10)
   const B = Math.round(Math.random() * 10)
-  console.log(A, B, A%2==1 && B%2==0 || A%2==0 && B%2==1)
+  //console.log(A, B, A%2==1 && B%2==0 || A%2==0 && B%2==1)
 }
 //Boolean13
 
@@ -111,7 +111,7 @@
   const A = Math.round(Math.random() * 10 - 5)
   const B = Math.round(Math.random() * 10 - 5)
   const C = Math.round(Math.random() * 10 - 5)
-  console.log(A, B, C, (A || B || C) >= 0)
+  //console.log(A, B, C, (A || B || C) >= 0)
 }
 
 //Begin8
@@ -120,7 +120,7 @@
   const A = Math.round(Math.random() * 10)
   const B = Math.round(Math.random() * 10)
   
-  console.log(A, B, (A + B) / 2)
+  //console.log(A, B, (A + B) / 2)
 }
 //Begin12
 
@@ -129,7 +129,7 @@
   const B = Math.round(Math.random() * 10)
   const C = A + B
   const P = A + B + C
-  console.log(C, P)
+ // console.log(C, P)
 }
 
 //Begin24
@@ -142,7 +142,7 @@
   const C = b
   const B = a
   
-  console.log(A, B, C)
+  //console.log(A, B, C)
 }
 
 //Begin25
@@ -152,7 +152,7 @@
   const y = 3 * x - 6 * x - 7
 
   
-  console.log(y)
+  //console.log(y)
 }
 
 //Integer2
@@ -161,7 +161,7 @@
   const M = Math.round(Math.random() * 10000)
 
 
-  console.log(Math.floor(M / 1000))
+  //console.log(Math.floor(M / 1000))
 }
 
 //Integer3
@@ -170,7 +170,7 @@
   const M = Math.round(Math.random() * 10000)
 
   
-  console.log(Math.floor(M / 1024))
+  //console.log(Math.floor(M / 1024))
 }
 
 //Integer7
@@ -181,7 +181,7 @@
   const B = Math.floor(M % 10)
   const C = A + B
   const D = A * B
-  console.log(C, D)
+  //console.log(C, D)
 }
 
 
@@ -192,21 +192,21 @@
   const A = Math.round(Math.random() * 10)
   
 
-  console.log(A, A % 2 == 0)
+  //console.log(A, A % 2 == 0)
 }
 //Boolean4
 
 {
   const A = Math.round(Math.random() * 10)
   const B = Math.round(Math.random() * 10)
-  console.log(A, B, A > 2, B <= 3)
+  //console.log(A, B, A > 2, B <= 3)
 }
 //Boolean8
 
 {
   const A = Math.round(Math.random() * 10)
   const B = Math.round(Math.random() * 10)
-  console.log(A, B, A%2==1 && B%2==1)
+  //console.log(A, B, A%2==1 && B%2==1)
 }
 
 
@@ -216,7 +216,7 @@
   const A = Math.round(Math.random() * 10 - 5)
   if(A > 0) {console.log(A, A + 1)}
   if(A < 0) {console.log(A, A - 2)}
-  if(A == 0, -0) {console.log(A, A == 10)}
+  if(A === 0 && A === -0) {console.log(A, A == 10)}
 }
 
 //Boolean23 
@@ -227,9 +227,10 @@
   const second = Math.floor((A % 1000) / 100)
   const first = Math.floor((A % 10000) / 1000)
 
-  console.log(A,first, second, third, fourth, first === fourth && third === second)
+  //console.log(A,first, second, third, fourth, first === fourth && third === second)
 }
-//Integer14 
+
+//Integer14
 {
   const A = Math.round(Math.random() * 1000)
   const first = Math.floor((A % 1000) / 100)
@@ -237,5 +238,106 @@
   const second = Math.floor((A % 100) / 10)
   const B = third * 100 +  first * 10 + second 
 
-  console.log(A, first, third, second, B)
+  //console.log(A, first, third, second, B)
+}
+
+/**
+ *
+ *
+ *
+ *
+ *   Conditionals
+ *
+ *
+ *
+ *
+ *
+* */
+
+
+{
+const B = 0
+
+// if(B > 0 && false){
+//   console.log('this is true')
+// }
+//
+// if(B > 0 && false){
+//   console.log('this is true')
+// } else if(B <= 0) {
+//   console.log('this could be happened')
+// } else if(B <= 0) {
+//   console.log('this could be happened')
+// } else if(B <= 0) {
+//   console.log('this could be happened')
+//   console.log('this could be happened')
+//   console.log('this could be happened')
+// } else {
+//   console.log('this is never happened')
+//
+//
+//   if(true) console.log("short query")
+//
+//   B <= 0 ? console.log("yes") : console.log("no")
+}
+
+
+{ // if3 Дано целое число. Если оно является положительным, то прибавить к нему 1; если отрицательным, то вычесть из него 2; если нулевым, то заменить его на 10. Вывести полученное число.
+
+  let A = Math.round(Math.random() * 10 - 5)
+  if( A > 0) {
+    A++ // A = A + 1
+  } else if( A < 0) {
+    A-- // A = A - 1
+  } else {
+    A = 10
+  }
+
+  console.log(A)
+}
+
+
+
+/**
+ *
+ *
+ *
+ *
+ *   SWITCH case
+ *
+ *
+ *
+ *
+ *
+ * */
+
+
+{
+  const A = Math.ceil(Math.random() * 7)
+  console.log(A)
+  switch (A) {
+    case 1:
+      console.log('Monday')
+      break
+    case 2:
+      console.log('Tuesday')
+      break
+    case 3:
+      console.log('Wednesday')
+      break
+    case 4:
+      console.log('Thursday')
+      break
+    case 5:
+      console.log('Friday')
+      break
+    case 6:
+      console.log('Saturday')
+      break
+    case 7:
+      console.log('Sunday')
+      break
+    default:
+      console.log('nope')
+  }
 }
