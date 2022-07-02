@@ -171,3 +171,20 @@ AK < A10. Если таких элементов нет, то вывести 0.*
   }
 }
 
+/*	Minmax1◦
+. Дано целое число N и набор из N чисел. Найти минимальный и
+максимальный из элементов данного набора и вывести их в указанном
+порядке.*/
+{
+  const N = Math.round(Math.random() * 20)
+  const arr = []
+  let min = 0
+  let max = 0
+  for(let i = 0; i < N; i++){
+    arr[i] = Math.round(Math.random() * 20)
+  }
+  console.log(arr)
+  for(let i = 0; i < arr.length; i++){
+    console.log(arr[i])
+  }
+}
