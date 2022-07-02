@@ -120,3 +120,54 @@ for(let i = 0; i < 100; i++){
   console.log(arr)
 
 }
+ 
+
+//Дан массив из N случайных чисел от 100 до 150 расставить массив по убыванию
+{
+  const N = Math.ceil(Math.random() * 30 + 10)
+  const arr = []
+  for(let i = 0; i < N; i++){
+    arr[i] = Math.ceil(Math.random() * 50 + 100)
+  }
+  console.log(arr)
+  for(let i = N - 1; i > 0; i--){
+    for(let j = 0;j < i; j++){
+      if(arr[j] < arr[j + 1]){
+        let temp = arr[j + 1] 
+        arr[j + 1] = arr[j]
+        arr[j] = temp
+      }
+    }
+  } 
+  console.log(arr)
+}
+
+{
+  const N = Math.ceil(Math.random() * 30 + 10)
+  const arr = []
+  for(let i = 0; i < N; i++){
+    arr[i] = Math.ceil(Math.random() * 50 + 100)
+  }
+  console.log(arr)
+  console.log(arr.sort((a, b)=> b - a))
+}
+
+/* Дан массив A ненулевых целых чисел размера 10. Вывести значение
+первого из тех его элементов AK, которые удовлетворяют неравенству
+AK < A10. Если таких элементов нет, то вывести 0.*/
+
+{
+  const N = 10
+  const arr = []
+  for(let i = 0; i < N; i++){
+    arr[i] = Math.ceil(Math.random() * 50) 
+  }
+  console.log(arr)
+  for(let i = 0; i < N - 1; i++){
+    if(arr[i] < arr[N - 1]){
+      console.log(arr[i])
+      break
+    }
+  }
+}
+
