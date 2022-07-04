@@ -178,13 +178,58 @@ AK < A10. Если таких элементов нет, то вывести 0.*
 {
   const N = Math.round(Math.random() * 20)
   const arr = []
-  let min = 0
-  let max = 0
+  
+  
   for(let i = 0; i < N; i++){
     arr[i] = Math.round(Math.random() * 20)
   }
+  let min = arr[N - 1]
+  let max = arr[N - 1]
   console.log(arr)
   for(let i = 0; i < arr.length; i++){
     console.log(arr[i])
+    if(arr[i] < min){
+      min = arr[i]
+    }
+    if(arr[i] > max){
+      max = arr[i]
+    }
   }
+console.log(min, max)
 }
+
+/*Minmax10. Дано целое число N и набор из N целых чисел.
+ Найти номер первого экстремального (то есть минимального или максимального) элемента
+из данного набора.*/
+{
+  const N = Math.ceil(Math.random() * 20)
+  const arr = []
+  for(let i = 0; i < N; i++){
+    arr[i] = Math.ceil(Math.random() * 30)
+  }
+  let min = arr[N - 1]
+  let max = arr[N - 1]
+  let ext = 0
+  let minI = 0
+  let maxI = 0
+  console.log(arr)
+  for( let i = 0; i < arr.length; i++){
+  if(arr[i] < min){
+    min = arr[i]
+    minI = i
+  }
+  if(arr[i] > max){
+    max = arr[i]
+    maxI = i
+  }
+  }
+  if(minI < maxI){
+    ext = minI
+  } else{
+    ext = maxI
+  }
+  console.log(ext)
+}
+
+/*1) Дан массив размера N и целые числа K и L (1 ≤ K ≤ L ≤ N). Найти
+сумму элементов массива с номерами от K до L включительно.*/
