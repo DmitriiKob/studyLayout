@@ -475,6 +475,9 @@ for(let i = 0; i < N; i++){
       }
     }
   }
+<<<<<<< HEAD
   console.log('--->', arr, match)
+=======
+>>>>>>> 8e2b1c7 (js5)
 }
 
