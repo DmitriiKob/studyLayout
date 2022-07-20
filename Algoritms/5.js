@@ -217,26 +217,24 @@
 {
     const arr = []
     const N = Math.round(Math.random() * 30)
-    let max = 0
-    let min = N
-    let temp = 0
-    let maxI = 0, minI = 0
+    const values = {max: 0, min: N, temp: 0}
+    const indexes = {maxI: 0, minI: 0}
     for(let i = 0; i < N; i++){
         arr[i] = Math.round(Math.random() * 10)
-        if(arr[i] < min){
-            minI = i
-            min = arr[i]
+        if(arr[i] < values.min){
+            indexes.minI = i
+            values.min = arr[i]
         }
-        if(arr[i] > max){
-            maxI = i
-            max = arr[i]
+        if(arr[i] > values.max){
+            indexes.maxI = i
+            values.max = arr[i]
         }
     }
     console.log('Array68', arr)
-   temp = arr[maxI]
-   arr[maxI] = arr[minI]
-   arr[minI] = temp
-    console.log(minI, maxI, arr)
+    values.temp = arr[indexes.maxI]
+    arr[indexes.maxI] = arr[indexes.minI]
+    arr[indexes.minI] = values.temp
+    console.log(indexes.minI, indexes.maxI, arr)
     }
 
     /*Array92. Дан целочисленный массив размера N. 
